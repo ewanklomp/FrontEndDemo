@@ -8,11 +8,9 @@ using Android.OS;
 
 namespace NISIApp
 {
-    [Activity(Label = "NISIApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "NISI", MainLauncher = true, Icon = "@drawable/nisilogo",Theme ="@style/MyTheme")]
     public class MainActivity : Activity
     {
-        int count = 1;
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -22,9 +20,7 @@ namespace NISIApp
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            
         }
     }
 }

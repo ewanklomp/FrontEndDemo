@@ -4,8 +4,8 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="NISIApp" android:name="md54579c706db6ac24e9f2285c70670161d.MainActivity">
+  <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/nisilogo" android:debuggable="true">
+    <activity android:icon="@drawable/nisilogo" android:label="NISI" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

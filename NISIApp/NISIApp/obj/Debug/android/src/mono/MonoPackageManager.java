@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "NISIApp.dll" comes first in this list. */
 		"NISIApp.dll",
 		"Java.Interop.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"System.Threading.dll",
 		"System.Runtime.dll",
 		"System.Collections.dll",
