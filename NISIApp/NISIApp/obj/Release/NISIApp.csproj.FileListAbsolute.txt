@@ -1,0 +1,14 @@
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.pdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.NISIApp.apk
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.NISIApp-Signed.apk
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.pdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\bin\NISIApp.NISIApp.apk
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\res\layout\main.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\res\values\strings.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\res\drawable\icon.png
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\R.cs.flag
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\uploadflags.txt
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.dll.mdb

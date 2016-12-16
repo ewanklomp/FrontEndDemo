@@ -1,0 +1,4 @@
+NISIApp.MainActivity, NISIApp;md54579c706db6ac24e9f2285c70670161d.MainActivity
+NISIApp.MainActivity, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.MainActivity
+NISIApp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
+nisiapp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
