@@ -1,6 +1,10 @@
 ﻿<resources>
   <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
-   
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+  </style>
+  <style name ="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">#ff0000</item>
+    <item name="spinBars">true</item>
   </style>
 
 
