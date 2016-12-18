@@ -41,8 +41,10 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\garm.p
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\slinger.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\R.cs.flag
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\uploadflags.txt
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.csprojResolveAssemblyReference.cache
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\sidebar.png
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\listviewrow.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Java.Interop.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Mono.Android.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\mscorlib.dll.mdb

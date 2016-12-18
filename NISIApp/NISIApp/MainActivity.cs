@@ -47,13 +47,13 @@ namespace NISIApp
 
         public void VulKopjes()
         {
-            Content Home = new Content("Home");
-            Content Nieuws = new Content("Nieuws");
-            Content WieZijnWij = new Content("Wie zijn wij");
-            Content Cursussen = new Content("Cursussen");
-            Content Consultancy = new Content("Consultancy");
-            Content Werkgroepen = new Content("Werkgroepen");
-            Content Contact = new Content("Contact");
+            Content Home = new Content("🏠                Home");
+            Content Nieuws = new Content("📰              Nieuws");
+            Content WieZijnWij = new Content("👪           Wie zijn wij");
+            Content Cursussen = new Content("📕            Cursussen");
+            Content Consultancy = new Content("👨          Consultancy");
+            Content Werkgroepen = new Content("✎           Werkgroepen");
+            Content Contact = new Content("📞               Contact");
             KopjesArray = new Content[7] { Home, Nieuws, WieZijnWij, Cursussen, Consultancy, Werkgroepen, Contact };
                         
         }
