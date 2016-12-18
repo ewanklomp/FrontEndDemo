@@ -1411,13 +1411,25 @@ namespace NISIApp
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int Icon = 2130837573;
+			public const int garm = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int nisilogo = 2130837574;
+			public const int Icon = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int notification_template_icon_bg = 2130837575;
+			public const int jan = 2130837575;
+			
+			// aapt resource value: 0x7f020048
+			public const int nisilogo = 2130837576;
+			
+			// aapt resource value: 0x7f02004b
+			public const int notification_template_icon_bg = 2130837579;
+			
+			// aapt resource value: 0x7f020049
+			public const int sjaak = 2130837577;
+			
+			// aapt resource value: 0x7f02004a
+			public const int slinger = 2130837578;
 			
 			static Drawable()
 			{

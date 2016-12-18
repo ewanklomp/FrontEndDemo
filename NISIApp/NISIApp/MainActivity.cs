@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.OS;
 using Java.Lang;
 using System.Collections.Generic;
+using Android.Graphics;
 
 namespace NISIApp
 {
@@ -15,6 +16,8 @@ namespace NISIApp
     {
         public static Content[] KopjesArray;
         public static Cursus[] CursusArray;
+        public static TeamLid[] TeamLidArray;
+        public static Bitmap JanFoto, SjaakFoto, SlingerFoto, GarmFoto;
 
 
         protected override void OnCreate(Bundle bundle)
@@ -26,13 +29,14 @@ namespace NISIApp
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Thread thread = new Thread(ActLikeRequest);
+            Thread thread = new Thread(OpenMainScreen);
             thread.Start();
             VulKopjes();
             VulCursussen();
+            VulTeamleden();
         }
 
-        private void ActLikeRequest()
+        private void OpenMainScreen()
         {
             Thread.Sleep(4000);
             RunOnUiThread(() => {
@@ -67,6 +71,23 @@ namespace NISIApp
             CursusArray = new Cursus[7] { CD3, SPM, BDMP, Feedback, MDE, AgilePO, OntwikkelAgile };
         }
 
+        private void VulTeamleden()
+        {
+
+            BitmapFactory.Options opt = new BitmapFactory.Options();
+            opt.InScaled = false;
+            JanFoto = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.jan, opt);
+            SjaakFoto = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.sjaak, opt);
+            SlingerFoto = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.slinger, opt);
+            GarmFoto = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.garm, opt);
+
+            TeamLid Jan = new TeamLid("Jan Vlietland", "Beschrijving", JanFoto);
+            TeamLid Sjaak = new TeamLid("Sjaak Brinkkemper", "Beschrijving", SjaakFoto);
+            TeamLid Slinger = new TeamLid("Slinger Jansen", "Beschrijving", SlingerFoto);
+            TeamLid Garm = new TeamLid("Garm Lucassen", "Beschrijving", GarmFoto);
+            TeamLidArray = new TeamLid[4] { Jan, Sjaak, Slinger, Garm };
+
+        }
 
     }
 }
