@@ -34,4 +34,3 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Sy
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Xml.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.dll.mdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.dll.mdb

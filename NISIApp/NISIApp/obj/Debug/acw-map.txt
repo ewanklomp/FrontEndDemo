@@ -2,6 +2,10 @@ NISIApp.MainActivity, NISIApp;md54579c706db6ac24e9f2285c70670161d.MainActivity
 NISIApp.MainActivity, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.MainActivity
 NISIApp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
 nisiapp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
+NISIApp.MainScreen, NISIApp;md54579c706db6ac24e9f2285c70670161d.MainScreen
+NISIApp.MainScreen, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.MainScreen
+NISIApp.MainScreen;md54579c706db6ac24e9f2285c70670161d.MainScreen
+nisiapp.MainScreen;md54579c706db6ac24e9f2285c70670161d.MainScreen
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
