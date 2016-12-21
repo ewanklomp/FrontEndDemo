@@ -1,7 +1,31 @@
+NISIApp.ContactView, NISIApp;md54579c706db6ac24e9f2285c70670161d.ContactView
+NISIApp.ContactView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.ContactView
+NISIApp.ContactView;md54579c706db6ac24e9f2285c70670161d.ContactView
+nisiapp.ContactView;md54579c706db6ac24e9f2285c70670161d.ContactView
+NISIApp.WerkgroepView, NISIApp;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
+NISIApp.WerkgroepView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
+NISIApp.WerkgroepView;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
+nisiapp.WerkgroepView;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
+NISIApp.ConsultancyView, NISIApp;md54579c706db6ac24e9f2285c70670161d.ConsultancyView
+NISIApp.ConsultancyView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.ConsultancyView
+NISIApp.ConsultancyView;md54579c706db6ac24e9f2285c70670161d.ConsultancyView
+nisiapp.ConsultancyView;md54579c706db6ac24e9f2285c70670161d.ConsultancyView
 NISIApp.MainActivity, NISIApp;md54579c706db6ac24e9f2285c70670161d.MainActivity
 NISIApp.MainActivity, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.MainActivity
 NISIApp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
 nisiapp.MainActivity;md54579c706db6ac24e9f2285c70670161d.MainActivity
+NISIApp.CursusView, NISIApp;md54579c706db6ac24e9f2285c70670161d.CursusView
+NISIApp.CursusView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.CursusView
+NISIApp.CursusView;md54579c706db6ac24e9f2285c70670161d.CursusView
+nisiapp.CursusView;md54579c706db6ac24e9f2285c70670161d.CursusView
+NISIApp.WieZijnWijView, NISIApp;md54579c706db6ac24e9f2285c70670161d.WieZijnWijView
+NISIApp.WieZijnWijView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.WieZijnWijView
+NISIApp.WieZijnWijView;md54579c706db6ac24e9f2285c70670161d.WieZijnWijView
+nisiapp.WieZijnWijView;md54579c706db6ac24e9f2285c70670161d.WieZijnWijView
+NISIApp.NieuwsView, NISIApp;md54579c706db6ac24e9f2285c70670161d.NieuwsView
+NISIApp.NieuwsView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.NieuwsView
+NISIApp.NieuwsView;md54579c706db6ac24e9f2285c70670161d.NieuwsView
+nisiapp.NieuwsView;md54579c706db6ac24e9f2285c70670161d.NieuwsView
 NISIApp.MainScreen, NISIApp;md54579c706db6ac24e9f2285c70670161d.MainScreen
 NISIApp.MainScreen, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.MainScreen
 NISIApp.MainScreen;md54579c706db6ac24e9f2285c70670161d.MainScreen

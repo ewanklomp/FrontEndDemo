@@ -60,7 +60,7 @@ namespace NISIApp
             mLeftDataSet.Add(MainActivity.KopjesArray[6].Kopjes);
             ArrayAdapter mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
             mLeftDrawer.Adapter = mLeftAdapter;
-
+            mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
             //Create Programm Frontpage
             mItems = new List<ProgrammaRij>();
@@ -75,6 +75,55 @@ namespace NISIApp
             ProgrammaListViewAdapter adapter = new ProgrammaListViewAdapter(this, mItems);
 
             mProgrammaView.Adapter = adapter;
+            mProgrammaView.ItemClick += MProgrammaView_ItemClick;
+        }
+
+        private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            int p = e.Position;
+            switch (p)
+            {
+
+                case 0:
+                    mDrawerLayout.CloseDrawers();
+                    break;
+                case 1:
+                    Intent i1 = new Intent(this, typeof(NieuwsView));
+                    this.StartActivity(i1);
+                    break;
+                case 2:
+                    Intent i2 = new Intent(this, typeof(WieZijnWijView));
+                    this.StartActivity(i2);
+                    break;
+                case 3:
+                    Intent i3 = new Intent(this, typeof(CursusView));
+                    this.StartActivity(i3);
+                    break;
+                case 4:
+                    Intent i4 = new Intent(this, typeof(ConsultancyView));
+                    this.StartActivity(i4);
+                    break;
+                case 5:
+                    Intent i5 = new Intent(this, typeof(WerkgroepView));
+                    this.StartActivity(i5);
+                    break;
+                case 6:
+                    Intent i6 = new Intent(this, typeof(ContactView));
+                    this.StartActivity(i6);
+                    break;
+
+
+
+                default:
+                    break;
+
+            }
+        }
+
+        private void MProgrammaView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            
+
         }
 
 

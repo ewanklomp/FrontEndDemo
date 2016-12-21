@@ -103,9 +103,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactView.cs" />
+    <Compile Include="WerkgroepView.cs" />
     <Compile Include="Content.cs" />
     <Compile Include="Cursus.cs" />
+    <Compile Include="ConsultancyView.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="CursusView.cs" />
+    <Compile Include="WieZijnWijView.cs" />
+    <Compile Include="NieuwsView.cs" />
     <Compile Include="MainScreen.cs" />
     <Compile Include="MyActionBarDrawerToggle.cs" />
     <Compile Include="Programma.cs" />
@@ -123,6 +129,24 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\listviewRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Nieuws.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\WieZijnWij.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Cursusview.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Consultancy.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Werkgroep.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Contact.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
