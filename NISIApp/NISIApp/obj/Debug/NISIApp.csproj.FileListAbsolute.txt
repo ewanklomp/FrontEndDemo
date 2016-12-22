@@ -78,5 +78,9 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\cursusvi
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\consultancy.xml
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\werkgroep.xml
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\contact.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\dialog_informationjan.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\dialog_informationsjaak.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\dialog_informationslinger.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\dialog_informationgarm.xml
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb

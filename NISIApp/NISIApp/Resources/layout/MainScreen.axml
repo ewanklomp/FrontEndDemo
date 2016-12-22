@@ -22,46 +22,47 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-          <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"            >
-            <TextView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="OVER NISI"
-                android:textColor ="#111"
-                android:gravity ="center"
-                android:textStyle="bold"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:text="Het Nederlands Instituut voor de Software Industrie heeft als doel de Nederlandse software industrie te ondersteunen bij het maken van betere software, door het ontwikkelen van hoogwaardige cursussen, consultancy en werkgroepen."
-                android:gravity ="center_horizontal"
-                android:textSize="12dp"
-                android:textColor ="#222"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Hieronder staan de eerstvolgende cursussen, Klik erop om er meer over te weten te komen!"
-                android:gravity ="center"
-                android:textSize="12dp"
-                android:textColor ="#222"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:id="@+id/ProgrammaFront"
-                android:choiceMode="singleChoice"
-                android:divider="#818181"
-                android:dividerHeight="1dp" />
-          </LinearLayout>
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Over NISI"
+                    android:textColor="#111"
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    android:fontFamily="sans-serif-condensed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Het Nederlands Instituut voor de Software Industrie heeft als doel de Nederlandse software industrie te ondersteunen bij het maken van betere software, door het ontwikkelen van hoogwaardige cursussen, consultancy en werkgroepen."
+                    android:gravity="center_horizontal"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Hieronder staan de eerstvolgende cursussen, Klik erop om er meer over te weten te komen!"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:id="@+id/ProgrammaFront"
+                    android:choiceMode="singleChoice"
+                    android:divider="#818181"
+                    android:dividerHeight="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
         </RelativeLayout>
     <!--Left Navigation drawer-->
         <LinearLayout

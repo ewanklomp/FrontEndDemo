@@ -25,16 +25,99 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="TBC"
+                    android:text="De Teamleden!"
                     android:textColor="#111"
                     android:gravity="center"
-                    android:textStyle="bold"
-                    android:textSize="30dp" />
-                
+                    android:textSize="24dp"
+                    android:fontFamily="sans-serif-condensed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Hieronder staan onze teamleden, Klik op de foto's om meer over ze te weten te komen."
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="100">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:weightSum="100">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="15"
+                            android:text="Jan Vlietland"
+                            android:textColor="#222"
+                            android:gravity="center" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:src="@drawable/jan" 
+                            android:id="@+id/janid"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="15"
+                            android:text="Slinger Jansen"
+                            android:textColor="#222"
+                            android:gravity="center" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:src="@drawable/slinger" 
+                            android:id="@+id/slingerid"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:weightSum="100">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="15"
+                            android:text="Sjaak Brinkkemper"
+                            android:textColor="#222"
+                            android:gravity="center" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:src="@drawable/sjaak"
+                            android:id="@+id/sjaakid"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="15"
+                            android:text="Garm Lucassen"
+                            android:textColor="#222"
+                            android:gravity="center" 
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:src="@drawable/garm"
+                            android:layout_marginBottom="15dp" 
+                            android:id="@+id/garmid"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
     <!--Left Navigation drawer-->

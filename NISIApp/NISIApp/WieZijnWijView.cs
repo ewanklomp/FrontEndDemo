@@ -23,8 +23,8 @@ namespace NISIApp
         MyActionBarDrawerToggle mDrawerToggle;
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
-
-
+        ImageView mJan, mSjaak, mSlinger, mGarm;
+      
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,7 +34,18 @@ namespace NISIApp
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
-            
+            mJan = FindViewById<ImageView>(Resource.Id.janid);
+            mSjaak = FindViewById<ImageView>(Resource.Id.sjaakid);
+            mSlinger = FindViewById<ImageView>(Resource.Id.slingerid);
+            mGarm = FindViewById<ImageView>(Resource.Id.garmid);
+
+
+            //Button initialization
+            mJan.Click += MJan_Click;
+            mSjaak.Click += MSjaak_Click;
+            mSlinger.Click += MSlinger_Click;
+            mGarm.Click += MGarm_Click;
+
 
             //set Top bar
             SetSupportActionBar(mToolbar);
@@ -60,6 +71,37 @@ namespace NISIApp
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
             
+        }
+
+        private void MGarm_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_InformationGarm dialogInfo = new dialog_InformationGarm();
+            dialogInfo.Show(transaction, "dialog fragment");
+        }
+
+        private void MSlinger_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_InformationSlinger dialogInfo = new dialog_InformationSlinger();
+            dialogInfo.Show(transaction, "dialog fragment");
+        }
+
+        private void MSjaak_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_InformationSjaak dialogInfo = new dialog_InformationSjaak();
+            dialogInfo.Show(transaction, "dialog fragment");
+        }
+
+        private void MJan_Click(object sender, EventArgs e)
+        {        
+
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_InformationJan dialogInfo = new dialog_InformationJan();
+            dialogInfo.Show(transaction, "dialog fragment");
+            
+
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
