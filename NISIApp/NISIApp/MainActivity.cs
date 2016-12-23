@@ -17,6 +17,8 @@ namespace NISIApp
         public static Content[] KopjesArray;
         public static Cursus[] CursusArray;
         public static TeamLid[] TeamLidArray;
+        public static string[] AanmeldArray;
+        public static int AanmeldInt;
         public static Bitmap JanFoto, SjaakFoto, SlingerFoto, GarmFoto;
 
 
@@ -34,6 +36,7 @@ namespace NISIApp
             VulKopjes();
             VulCursussen();
             VulTeamleden();
+            VulAanmeldingen();
         }
 
         private void OpenMainScreen()
@@ -86,6 +89,15 @@ namespace NISIApp
             TeamLid Slinger = new TeamLid("Slinger Jansen", "Beschrijving", SlingerFoto);
             TeamLid Garm = new TeamLid("Garm Lucassen", "Beschrijving", GarmFoto);
             TeamLidArray = new TeamLid[4] { Jan, Sjaak, Slinger, Garm };
+
+        }
+
+        private void VulAanmeldingen()
+        {
+
+            string m0 = "Consultancy";
+
+            AanmeldArray = new string[1] { m0 };
 
         }
 

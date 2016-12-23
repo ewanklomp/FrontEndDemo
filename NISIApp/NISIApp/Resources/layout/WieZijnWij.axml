@@ -66,8 +66,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="30"
-                            android:src="@drawable/jan" 
-                            android:id="@+id/janid"/>
+                            android:src="@drawable/jan"
+                            android:id="@+id/janid" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
@@ -79,8 +79,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="30"
-                            android:src="@drawable/slinger" 
-                            android:id="@+id/slingerid"/>
+                            android:src="@drawable/slinger"
+                            android:id="@+id/slingerid" />
                     </LinearLayout>
                     <LinearLayout
                         android:orientation="vertical"
@@ -100,22 +100,21 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:src="@drawable/sjaak"
-                            android:id="@+id/sjaakid"/>
+                            android:id="@+id/sjaakid" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="15"
                             android:text="Garm Lucassen"
                             android:textColor="#222"
-                            android:gravity="center" 
-                            />
+                            android:gravity="center" />
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:src="@drawable/garm"
-                            android:layout_marginBottom="15dp" 
-                            android:id="@+id/garmid"/>
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/garmid" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
