@@ -2,15 +2,24 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\BouncyCastle\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MailKit\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MimeKit\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\BouncyCastle\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MailKit\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MimeKit\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\BouncyCastle.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MailKit.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\MimeKit.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>

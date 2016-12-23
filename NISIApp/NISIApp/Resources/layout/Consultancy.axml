@@ -26,55 +26,49 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="50dp"
-                  android:text="Consultancy"
-                  android:textColor="#111"
-                  android:gravity="center"
-                  android:textSize="24dp"
-                  android:fontFamily="sans-serif-condensed" />
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:text="Naast cursussen levert het NISI, consultancy aan softwarebedrijven in de vorm van workshops, trainingen en coaching."
-                  android:gravity="center"
-                  android:textSize="12dp"
-                  android:textColor="#222"
-                  android:layout_marginLeft="5dp"
-                  android:layout_marginRight="5dp" />
-
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="40dp"
-                  android:text="WORKSHOPS VAN HET NISI"
-                  android:gravity="center"
-                  android:textSize="14dp"
-                  android:textColor="#222"
-                  android:layout_marginLeft="5dp"
-                  android:layout_marginRight="5dp"
-                  android:fontFamily="sans-serif-thin"
-                  android:layout_marginTop="20dp"/>
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:text="De software industrie behoort tot één van de snelst ontwikkelende industrieën ter wereld. Om u in deze markt te helpen met de groei van uw bedrijf en uw producten en services, levert het NISI hoogwaardige consultancy. NISI levert deze consultancy in de vorm van maatwerktrainingen, workshops en inhoudelijke coaching. Kenmerken van onze consultants zijn zeer hoog kennisniveau, passie voor het vak en de drive om u op een praktische wijze verder te helpen."
-                  android:gravity="center"
-                  android:textSize="12dp"
-                  android:textColor="#222"
-                  android:layout_marginLeft="15dp"
-                  android:layout_marginRight="15dp"
-                  android:layout_marginTop="15dp"/>
-              <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginTop="50dp"
-                            android:src="@drawable/aanmeld"
-                            android:id="@+id/aanmeldbtn">
-                
-              </ImageView>
-              
-              
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Consultancy"
+                    android:textColor="#111"
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    android:fontFamily="sans-serif-condensed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Naast cursussen levert het NISI, consultancy aan softwarebedrijven in de vorm van workshops, trainingen en coaching."
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="WORKSHOPS VAN HET NISI"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="De software industrie behoort tot één van de snelst ontwikkelende industrieën ter wereld. Om u in deze markt te helpen met de groei van uw bedrijf en uw producten en services, levert het NISI hoogwaardige consultancy. NISI levert deze consultancy in de vorm van maatwerktrainingen, workshops en inhoudelijke coaching. Kenmerken van onze consultants zijn zeer hoog kennisniveau, passie voor het vak en de drive om u op een praktische wijze verder te helpen."
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/aanmeld"
+                    android:id="@+id/aanmeldbtn" />
             </LinearLayout>
         </RelativeLayout>
     <!--Left Navigation drawer-->

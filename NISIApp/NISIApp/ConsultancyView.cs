@@ -23,7 +23,7 @@ namespace NISIApp
         MyActionBarDrawerToggle mDrawerToggle;
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
-
+        ImageView mAanmeldbtn;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,7 +34,8 @@ namespace NISIApp
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
-            
+            mAanmeldbtn = FindViewById<ImageView>(Resource.Id.aanmeldbtn);
+            mAanmeldbtn.Click += MAanmeldbtn_Click;
 
             //set Top bar
             SetSupportActionBar(mToolbar);
@@ -60,6 +61,14 @@ namespace NISIApp
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
             
+        }
+
+        private void MAanmeldbtn_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_Aanmeld dialogInfo = new dialog_Aanmeld();
+            dialogInfo.Show(transaction, "dialog fragment");
+            MainActivity.AanmeldInt = 0;
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

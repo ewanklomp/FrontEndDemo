@@ -29,12 +29,33 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="TBC"
+                    android:text="Contact"
                     android:textColor="#111"
                     android:gravity="center"
-                    android:textStyle="bold"
-                    android:textSize="30dp" />
-                
+                    android:textSize="24dp"
+                    android:fontFamily="sans-serif-condensed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hier kunt u contact opnemen of feedback geven. Als u het contact opnemen formulier invult zullen we zo spoedig mogelijk contact met u opnemen!"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/contact"
+                    android:id="@+id/contactBTN" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@drawable/feedback"
+                    android:id="@+id/feedbackBTN" />
             </LinearLayout>
         </RelativeLayout>
     <!--Left Navigation drawer-->

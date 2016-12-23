@@ -99,7 +99,7 @@ namespace NISIApp
 
     }
 
-    class dialog_InformationGarm: DialogFragment
+    class dialog_InformationGarm : DialogFragment
     {
 
 
@@ -123,6 +123,8 @@ namespace NISIApp
         }
 
 
-    }
 
+
+
+    }
 }

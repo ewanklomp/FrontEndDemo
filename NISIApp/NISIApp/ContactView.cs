@@ -23,6 +23,7 @@ namespace NISIApp
         MyActionBarDrawerToggle mDrawerToggle;
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
+        ImageView mContact, mFeedback;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -34,6 +35,10 @@ namespace NISIApp
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
+            mContact = FindViewById<ImageView>(Resource.Id.contactBTN);
+            mFeedback = FindViewById<ImageView>(Resource.Id.feedbackBTN);
+            mContact.Click += MContact_Click;
+            mFeedback.Click += MFeedback_Click;
             
 
             //set Top bar
@@ -60,6 +65,21 @@ namespace NISIApp
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
             
+        }
+
+        private void MFeedback_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_Feedback dialogInfo = new dialog_Feedback();
+            dialogInfo.Show(transaction, "dialog fragment");
+        }
+
+        private void MContact_Click(object sender, EventArgs e)
+        {
+            MainActivity.AanmeldInt =2;
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_Aanmeld dialogInfo = new dialog_Aanmeld();
+            dialogInfo.Show(transaction, "dialog fragment");
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

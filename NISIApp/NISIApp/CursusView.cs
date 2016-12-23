@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Support.V7.App;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V4.Widget;
+using Android.Graphics;
 
 namespace NISIApp
 {
@@ -24,6 +25,9 @@ namespace NISIApp
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
 
+        private List<CursusRij> mItems;
+        private ListView mCursusView;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,7 +38,7 @@ namespace NISIApp
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
-            
+            mCursusView = FindViewById<ListView>(Resource.Id.CursusListView);
 
             //set Top bar
             SetSupportActionBar(mToolbar);
@@ -58,7 +62,24 @@ namespace NISIApp
             ArrayAdapter mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
             mLeftDrawer.Adapter = mLeftAdapter;
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
+            
+            //Sets listview (as CursusView)
+            mItems = new List<CursusRij>();
+            mItems.Add(new CursusRij(MainActivity.CursusArray[0].Foto, MainActivity.CursusArray[0].Naam, MainActivity.CursusArray[0].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[1].Foto, MainActivity.CursusArray[1].Naam, MainActivity.CursusArray[1].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[2].Foto, MainActivity.CursusArray[2].Naam, MainActivity.CursusArray[2].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[3].Foto, MainActivity.CursusArray[3].Naam, MainActivity.CursusArray[3].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[4].Foto, MainActivity.CursusArray[4].Naam, MainActivity.CursusArray[4].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[5].Foto, MainActivity.CursusArray[5].Naam, MainActivity.CursusArray[5].Samenvatting));
+            mItems.Add(new CursusRij(MainActivity.CursusArray[6].Foto, MainActivity.CursusArray[6].Naam, MainActivity.CursusArray[6].Samenvatting));
 
+            CursusListViewAdapter cursusAdapter = new CursusListViewAdapter(this, mItems);
+            mCursusView.Adapter = cursusAdapter;
+            mCursusView.ItemClick += MCursusView_ItemClick;
+        }
+
+        private void MCursusView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
             
         }
 
