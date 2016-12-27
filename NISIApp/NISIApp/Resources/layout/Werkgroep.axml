@@ -92,7 +92,6 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_marginTop="50dp"
                         android:layout_marginBottom="25dp"
                         android:src="@drawable/aanmeld"
                         android:id="@+id/aanmeldbtnWG" />

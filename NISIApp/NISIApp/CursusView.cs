@@ -80,7 +80,12 @@ namespace NISIApp
 
         private void MCursusView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            
+            int p = e.Position;
+            MainActivity.CursusInt = p;
+            Intent i0 = new Intent(this, typeof(IndivCursusView));
+            this.StartActivity(i0);
+
+
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

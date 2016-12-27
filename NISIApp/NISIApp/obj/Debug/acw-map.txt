@@ -30,6 +30,10 @@ NISIApp.CursusListViewAdapter, NISIApp;md54579c706db6ac24e9f2285c70670161d.Cursu
 NISIApp.CursusListViewAdapter, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.CursusListViewAdapter
 NISIApp.CursusListViewAdapter;md54579c706db6ac24e9f2285c70670161d.CursusListViewAdapter
 nisiapp.CursusListViewAdapter;md54579c706db6ac24e9f2285c70670161d.CursusListViewAdapter
+NISIApp.IndivCursusView, NISIApp;md54579c706db6ac24e9f2285c70670161d.IndivCursusView
+NISIApp.IndivCursusView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.IndivCursusView
+NISIApp.IndivCursusView;md54579c706db6ac24e9f2285c70670161d.IndivCursusView
+nisiapp.IndivCursusView;md54579c706db6ac24e9f2285c70670161d.IndivCursusView
 NISIApp.WerkgroepView, NISIApp;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
 NISIApp.WerkgroepView, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.WerkgroepView
 NISIApp.WerkgroepView;md54579c706db6ac24e9f2285c70670161d.WerkgroepView

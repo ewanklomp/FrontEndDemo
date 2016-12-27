@@ -6,6 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="Contact" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.ContactView" />
+    <activity android:label="Cursus" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.IndivCursusView" />
     <activity android:label="Werkgroepen" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.WerkgroepView" />
     <activity android:label="Consultancy" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.ConsultancyView" />
     <activity android:icon="@drawable/nisilogo" android:label="NISI" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.MainActivity">

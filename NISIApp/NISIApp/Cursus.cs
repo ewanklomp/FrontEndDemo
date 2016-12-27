@@ -19,14 +19,14 @@ namespace NISIApp
         public string Naam {get; set;}
         public string Samenvatting { get; set; }
         public string Beschrijving { get; set; }
-        public string Programma { get; set; }
+        public List<ProgrammaRij> Programma { get; set; }
         public string Kosten { get; set; }
         public string Locatie { get; set; }
         public string Link { get; set; }
         public Bitmap Foto { get; set; }
 
 
-        public Cursus(string naam, string samenvatting, string beschrijving, string programma, string kosten, string locatie ,string link, Bitmap foto)
+        public Cursus(string naam, string samenvatting, string beschrijving, List<ProgrammaRij> programma, string kosten, string locatie ,string link, Bitmap foto)
         {
 
             this.Naam = naam;

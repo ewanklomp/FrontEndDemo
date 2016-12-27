@@ -122,8 +122,39 @@ namespace NISIApp
 
         private void MProgrammaView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            
 
+            int p = e.Position;
+            switch (p)
+            {
+                case 0:
+                    break;
+                case 1:
+                    MainActivity.CursusInt = 2;
+                    break;
+                case 2:
+                    MainActivity.CursusInt = 4;
+                    break;
+                case 3:
+                    MainActivity.CursusInt = 0;
+                    break;
+                case 4:
+                    MainActivity.CursusInt = 1;
+                    break;
+                case 5:
+                    MainActivity.CursusInt = 5;
+                    break;
+                case 6:
+                    MainActivity.CursusInt = 6;
+                    break;
+
+
+
+                default:
+                    break;
+            }
+
+            Intent i0 = new Intent(this, typeof(IndivCursusView));
+            this.StartActivity(i0);
         }
 
 

@@ -121,6 +121,7 @@
     <Compile Include="dialog_Information.cs" />
     <Compile Include="CursusRij.cs" />
     <Compile Include="CursusListViewAdapter.cs" />
+    <Compile Include="IndivCursusView.cs" />
     <Compile Include="WerkgroepView.cs" />
     <Compile Include="Content.cs" />
     <Compile Include="Cursus.cs" />
@@ -188,6 +189,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\listviewRowCursus.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\IndivCursus.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -268,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\oagile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\meerinfo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

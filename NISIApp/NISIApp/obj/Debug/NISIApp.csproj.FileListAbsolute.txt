@@ -113,5 +113,7 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\feedba
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\mde.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\agile.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\oagile.png
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\indivcursus.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\meerinfo.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb
