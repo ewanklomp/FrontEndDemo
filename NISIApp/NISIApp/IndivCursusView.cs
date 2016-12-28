@@ -25,8 +25,8 @@ namespace NISIApp
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
         TextView mTitel, mBeschrijving;
-        ListView mProgramma;
-        LinearLayout mTest;
+        //ListView mProgramma;
+        ImageView mImageProgram , mAanmeldbtn, mInfobtn;
 
 
 
@@ -41,9 +41,12 @@ namespace NISIApp
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
             mTitel = FindViewById<TextView>(Resource.Id.txtTitel);
             mBeschrijving = FindViewById<TextView>(Resource.Id.txtBeschrijvingInv);
-            mProgramma = FindViewById<ListView>(Resource.Id.IndivProgram);
-            mTest = FindViewById<LinearLayout>(Resource.Id.testLL);
-
+            //mProgramma = FindViewById<ListView>(Resource.Id.IndivProgram);
+            mImageProgram = FindViewById<ImageView>(Resource.Id.ImageProgram);
+            mAanmeldbtn = FindViewById<ImageView>(Resource.Id.aanmeldbtn);
+            mInfobtn = FindViewById<ImageView>(Resource.Id.meerinfobtn);
+            mAanmeldbtn.Click += MAanmeldbtn_Click;
+            mInfobtn.Click += MInfobtn_Click;
 
 
             //set Top bar
@@ -74,13 +77,26 @@ namespace NISIApp
             //Setting the Right Cursus
             mTitel.Text = MainActivity.CursusArray[MainActivity.CursusInt].Naam;
             mBeschrijving.Text = MainActivity.CursusArray[MainActivity.CursusInt].Beschrijving;
-
-            List<ProgrammaRij> Programma = MainActivity.CursusArray[MainActivity.CursusInt].Programma;
+            mImageProgram.SetImageBitmap(MainActivity.CursusArray[MainActivity.CursusInt].ProgrammaFoto);
+            /*List<ProgrammaRij> Programma = MainActivity.CursusArray[MainActivity.CursusInt].Programma;
             ProgrammaListViewAdapter adapter = new ProgrammaListViewAdapter(this, Programma);
-            mProgramma.Adapter = adapter;
-            SetListViewHeightBasedOnChildren(mProgramma);
-            mProgramma.Focusable = false;
+            mProgramma.Adapter = adapter;*/
 
+
+        }
+
+        private void MInfobtn_Click(object sender, EventArgs e)
+        {
+            Intent i = new Intent(Intent.ActionView, Android.Net.Uri.Parse(MainActivity.CursusArray[MainActivity.CursusInt].Link));
+            this.StartActivity(i);
+        }
+
+        private void MAanmeldbtn_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_Aanmeld dialogInfo = new dialog_Aanmeld();
+            dialogInfo.Show(transaction, "dialog fragment");
+            MainActivity.AanmeldInt = MainActivity.CursusInt +3;
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -135,30 +151,7 @@ namespace NISIApp
             return base.OnOptionsItemSelected(item);
         }
 
-        public static void SetListViewHeightBasedOnChildren(ListView listView)
-        {
-            IListAdapter listAdapter = listView.Adapter;
-            if (listAdapter == null)
-            {
-                return;
-            }
-
-            int totalHeight = listView.PaddingTop + listView.PaddingBottom;
-            for (int i = 0; i < listAdapter.Count; i++)
-            {
-                View listItem = listAdapter.GetView(i, null, listView);
-                if (listItem is ViewGroup)
-                {
-                    listItem.LayoutParameters = new global::Android.Views.ViewGroup.LayoutParams(global::Android.Views.ViewGroup.LayoutParams.WrapContent, global::Android.Views.ViewGroup.LayoutParams.WrapContent);
-                }
-                listItem.Measure(0, 0);
-                totalHeight += listItem.MeasuredHeight;
-            }
-
-            global::Android.Views.ViewGroup.LayoutParams parameters = listView.LayoutParameters;
-            parameters.Height = totalHeight + (listView.DividerHeight * (listAdapter.Count - 1));
-            listView.LayoutParameters = parameters;
-        }
+        
 
     }
 }

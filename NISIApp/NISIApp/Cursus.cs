@@ -24,9 +24,10 @@ namespace NISIApp
         public string Locatie { get; set; }
         public string Link { get; set; }
         public Bitmap Foto { get; set; }
+        public Bitmap ProgrammaFoto { get; set; }
 
 
-        public Cursus(string naam, string samenvatting, string beschrijving, List<ProgrammaRij> programma, string kosten, string locatie ,string link, Bitmap foto)
+        public Cursus(string naam, string samenvatting, string beschrijving, List<ProgrammaRij> programma, string kosten, string locatie ,string link, Bitmap foto, Bitmap programmafoto)
         {
 
             this.Naam = naam;
@@ -37,6 +38,7 @@ namespace NISIApp
             this.Locatie = locatie;
             this.Link = link;
             this.Foto = foto;
+            this.ProgrammaFoto = programmafoto;
             
         }
 

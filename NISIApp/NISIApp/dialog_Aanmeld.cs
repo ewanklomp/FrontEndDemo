@@ -123,20 +123,31 @@ Naam: " + mTxtNaam.Text +
 
                 using (var client = new MailKit.Net.Smtp.SmtpClient())
                 {
-                    // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
-                    client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                    try
+                    {// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
-                    client.Connect("smtp.gmail.com", 25, false);
+                        client.Connect("smtp.gmail.com", 25, false);
 
-                    // Note: since we don't have an OAuth2 token, disable
-                    // the XOAUTH2 authentication mechanism.
-                    client.AuthenticationMechanisms.Remove("XOAUTH2");
+                        // Note: since we don't have an OAuth2 token, disable
+                        // the XOAUTH2 authentication mechanism.
+                        client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-                    // Note: only needed if the SMTP server requires authentication
-                    client.Authenticate("teamkoob@gmail.com", "ResacaBoys");
+                        // Note: only needed if the SMTP server requires authentication
+                        client.Authenticate("teamkoob@gmail.com", "ResacaBoys");
 
-                    client.Send(message);
-                    client.Disconnect(true);
+                        client.Send(message);
+                        client.Disconnect(true);
+
+                        Toast.MakeText(this.Activity, "Succes! We zullen zo snel mogelijk contact met u opnemen!", Android.Widget.ToastLength.Short).Show();
+                    }
+
+                    catch (System.Net.Sockets.SocketException e)
+                    {
+                        Toast.MakeText(this.Activity, "Geen verbinding kunnen maken, probeer het later nog een keer!", Android.Widget.ToastLength.Short).Show();
+                    }
+
+
                 }
 
                 

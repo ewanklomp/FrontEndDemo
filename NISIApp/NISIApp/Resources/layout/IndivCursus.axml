@@ -22,80 +22,72 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-          <ScrollView
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fillViewport="true">
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/txtTitel"
-                  android:text="TBC"
-                  android:textColor="#111"
-                  android:gravity="center"
-                  android:textStyle="bold"
-                  android:layout_marginRight="10dp"
-                  android:layout_marginLeft="10dp"
-                  android:layout_marginBottom="15dp"
-                  android:textSize="24dp" />
-              <TextView
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtBeschrijvingInv"
-                    android:text="TBC"
-                    android:gravity="center"
-                    android:textColor="#222"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"/>
-
-              <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hieronder het programma van deze cursus: "
-                    android:gravity="center"
-                    android:textColor="#222"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="15dp"/>
-              <ListView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/IndivProgram"
-                    android:choiceMode="singleChoice"
-                    android:divider="#818181"
-                    android:dividerHeight="1dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp" />
-
-              <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="100"
-                android:id="@+id/testLL">
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="50"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/aanmeld"
-                    android:id="@+id/aanmeldbtn" />
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="50"
-                    android:src="@drawable/meerinfo"
-                    android:id="@+id/meerinfobtn" />
-
-              </LinearLayout>
-            </LinearLayout>
-          </ScrollView>
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTitel"
+                        android:text="TBC"
+                        android:textColor="#111"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="24dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtBeschrijvingInv"
+                        android:text="TBC"
+                        android:gravity="center"
+                        android:textColor="#222"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hieronder het programma van deze cursus: "
+                        android:gravity="center"
+                        android:textColor="#222"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon"
+                        android:id="@+id/ImageProgram" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="100"
+                        android:id="@+id/testLL">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/aanmeld"
+                            android:id="@+id/aanmeldbtn" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="50"
+                            android:src="@drawable/meerinfo"
+                            android:id="@+id/meerinfobtn" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
         </RelativeLayout>
     <!--Left Navigation drawer-->
         <LinearLayout
