@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="80"
         android:orientation="vertical"
-        android:layout_marginLeft="5dp">
+        android:layout_marginLeft="10dp">
         <TextView
             android:text="Onderwerp"
             android:layout_width="match_parent"
@@ -35,6 +35,7 @@
             android:gravity="center_vertical"
             android:textColor="#3B3B3B"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
             android:id="@+id/sprekersCursus" />
     </LinearLayout>
 </LinearLayout>
