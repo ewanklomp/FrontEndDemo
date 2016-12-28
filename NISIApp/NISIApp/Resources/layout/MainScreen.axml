@@ -34,7 +34,7 @@
                     android:textColor="#111"
                     android:gravity="center"
                     android:textSize="24dp"
-                    android:fontFamily="sans-serif-condensed" />
+                    android:typeface="monospace" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"

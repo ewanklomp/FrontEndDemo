@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:weightSum="100">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDatum"
+        android:text="OCTOBER 17, 2016"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginBottom="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitel"
+        android:text="lancering nederlands instituut voor de software industrie"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOnderTitel"
+        android:text="Test"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNieuwsArtikel"
+        android:text="Test2"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+</LinearLayout>

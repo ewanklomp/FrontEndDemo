@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="NISIApp.NISIApp" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="NISIApp.NISIApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
-  <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/nisilogo">
-    <activity android:icon="@drawable/nisilogo" android:label="NISI" android:name="md54579c706db6ac24e9f2285c70670161d.MainActivity">
+  <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:label="Contact" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.ContactView" />
+    <activity android:label="Cursus" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.IndivCursusView" />
+    <activity android:label="Werkgroepen" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.WerkgroepView" />
+    <activity android:label="Consultancy" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.ConsultancyView" />
+    <activity android:icon="@drawable/nisilogo" android:label="NISI" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="Cursus" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.CursusView" />
+    <activity android:label="Wie zijn wij" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.WieZijnWijView" />
+    <activity android:label="Nieuws" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.NieuwsView" />
+    <activity android:label="NISI" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.MainScreen" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="NISIApp.NISIApp.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
 </manifest>

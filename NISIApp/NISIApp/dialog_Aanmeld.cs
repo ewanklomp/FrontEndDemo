@@ -210,8 +210,10 @@ Naam: " + mTxtNaam.Text +
 "\r\nEmail: " + mTxtEmail.Text +
 "\r\nOpmerking: " + mOpmerking.Text 
                 };
-
+            
                 using (var client = new MailKit.Net.Smtp.SmtpClient())
+                {
+                try
                 {
                     // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
                     client.ServerCertificateValidationCallback = (s, c, h, e) => true;
@@ -227,7 +229,14 @@ Naam: " + mTxtNaam.Text +
 
                     client.Send(message);
                     client.Disconnect(true);
+                    Toast.MakeText(this.Activity, "Succes! We zullen zo snel mogelijk contact met u opnemen!", Android.Widget.ToastLength.Short).Show();
+
                 }
+                catch (System.Net.Sockets.SocketException e)
+                {
+                    Toast.MakeText(this.Activity, "Geen verbinding kunnen maken, probeer het later nog een keer!", Android.Widget.ToastLength.Short).Show();
+                }
+            }
 
                            
         }

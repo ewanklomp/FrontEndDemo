@@ -113,7 +113,6 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:src="@drawable/garm"
-                            android:layout_marginBottom="15dp"
                             android:id="@+id/garmid" />
                     </LinearLayout>
                 </LinearLayout>

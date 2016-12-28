@@ -24,6 +24,9 @@ namespace NISIApp
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
 
+        private List<Nieuws> mNieuwsItems;
+        private ListView mNieuwsView;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +37,8 @@ namespace NISIApp
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
+            mNieuwsView = FindViewById<ListView>(Resource.Id.NieuwsListView);
+            
             
 
             //set Top bar
@@ -59,7 +64,17 @@ namespace NISIApp
             mLeftDrawer.Adapter = mLeftAdapter;
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
-            
+            //Set Nieuwsitems
+            mNieuwsItems = new List<Nieuws>();
+            foreach (Nieuws item in MainActivity.NieuwsArray)
+            {
+                mNieuwsItems.Add(item);
+            }
+            mNieuwsItems.Reverse();
+            NieuwsListViewAdapter mNieuwsAdapter = new NieuwsListViewAdapter(this, mNieuwsItems);
+            mNieuwsView.Adapter = mNieuwsAdapter;
+
+
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

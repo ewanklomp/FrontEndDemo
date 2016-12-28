@@ -18,6 +18,7 @@ namespace NISIApp
         public static Cursus[] CursusArray;
         public static TeamLid[] TeamLidArray;
         public static string[] AanmeldArray;
+        public static Nieuws[] NieuwsArray;
         public static int AanmeldInt;
         public static int CursusInt;
         public static Bitmap JanFoto, SjaakFoto, SlingerFoto, GarmFoto, CdFoto, SpmFoto, BdmpFoto, FBFoto, MdeFoto, AgilePOFoto, OAgileFoto;
@@ -38,6 +39,7 @@ namespace NISIApp
             VulCursussen();
             VulTeamleden();
             VulAanmeldingen();
+            VulNieuws();
 
         }
 
@@ -49,7 +51,7 @@ namespace NISIApp
 
         private void OpenMainScreen()
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
             RunOnUiThread(() => {
                 Intent i = new Intent(this, typeof(MainScreen));
                 this.StartActivity(i);
@@ -214,6 +216,13 @@ namespace NISIApp
             string m9 = "Ontwikkelen van Agile organisaties in de praktijk";
             AanmeldArray = new string[10] { m0, m1,m2,m3,m4,m5,m6,m7,m8,m9 };
 
+        }
+
+        private void VulNieuws()
+        {
+            Nieuws n1 = new Nieuws("AUGUST 29, 2016", "20 september start cursus software product management", "", "Voor de zestiende keer op rij biedt de Universiteit Utrecht de cursus software product management aan.Na afloop van deze cursus zijn de deelnemers in staat de functie ‘software - productmanager’ succesvol binnen de organisatie uit te rollen.Onderwerpen die aan bod komen zijn onder andere het veranderproces van een maatwerksoftware - bedrijf naar een écht productsoftware - bedrijf, het maken van een product roadmap die bestendig is tegen veranderingen en het internationaliseren van je product.\r\n\r\nMeer informatie over de cursus vind je op de NISI cursuspagina, of op de specifiek ingerichte cursuswebsite.Hier vind je onder andere de datum en inhoud van de bijeenkomsten, alsmede welke gastsprekers de verbinding komen leggen tussen theorie en praktijk.De cursus bestaat uit tien achtereenvolgende bijeenkomsten en vindt plaats van 20 september t / m 22 november 2016.\r\n\r\nNeem voor meer informatie contact op met Garm Lucassen door te bellen met 030 253 6311 of te mailen naar g.lucassen@uu.nl", "Nieuws");
+            Nieuws n2 = new Nieuws("OCTOBER 17, 2016", "Lancering Nederlands Instituut voor de Software Industrie", "Recent heeft de Universiteit Utrecht het initiatief genomen tot de oprichting van het Nederlands Instituut voor de Software Industrie (NISI). Het NISI zal door middel van cursussen, consultancy en netwerken toegepast wetenschappelijk onderzoek financieren.", "Waarom het NISI?\r\n\r\nDe Nederlandse software industrie floreert. Meer dan 1% van onze export bestaan uit software en er zijn meer dan 300.000 mensen werkzaam in de sector. Die mensen ontwikkelen innovatieve producten, nieuwe markten in Nederland en ver daarbuiten. Bedrijven zoals TomTom, Unit4, Planon en Exact laten de potentie zien van de innovatiekracht verpakt in software producten.\r\n\r\nEen kennisnetwerk is onontbeerlijk in zo'n kennisintensieve sector. Dat terwijl softwarebedrijven voor de software industrie vaak onzichtbaar en geïsoleerd werken zonder actief industrieel netwerk. Het Nederlands Instituut voor de Software Industrie wil dat veranderen.\r\n\r\n\r\nWie zijn de oprichters?\r\n\r\nDe oprichters van het NISI zijn Prof. Sjaak Brinkkemper, Dr. Jan Vlietland en Dr. Slinger Jansen. Daarnaast zijn promovendi zoals Garm Lucassen betrokken.\r\n\r\n\r\nWat is de doelstelling van het NISI?\r\n\r\nDe doelstelling van het NISI is om kennis aan te bieden die uniek is voor de software industrie, en niet ergens anders voorhanden is. Dus geen standaard projectmanagement, scrum, of automatisch testen, maar software product management, product portfolio management en security & encryptie programmeren.\r\nDe oprichters zeggen daarover, “We geven al jarenlang succesvol cursussen Software Product Management aan de software industrie. Met het NISI bouwen we dit uit tot een kennisinstituut dat specifiek is voor de software industrie in Nederland met opleiding, innovatie en netwerking”.\r\nMeer informatie kun je vinden op de website van het NISI, www.nisi.nl, of neem direct contact op met Dr.Jan Vlietland via 06 - 20411834.","");
+            NieuwsArray = new Nieuws[2] { n1, n2 };
         }
 
     }
