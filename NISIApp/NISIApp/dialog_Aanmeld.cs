@@ -127,8 +127,8 @@ Naam: " + mTxtNaam.Text +
                     {// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
                         client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
-                        client.Connect("smtp.gmail.com", 25, false);
-
+                        client.Connect("smtp.gmail.com", 587);
+                        
                         // Note: since we don't have an OAuth2 token, disable
                         // the XOAUTH2 authentication mechanism.
                         client.AuthenticationMechanisms.Remove("XOAUTH2");
@@ -145,8 +145,30 @@ Naam: " + mTxtNaam.Text +
                     catch (System.Net.Sockets.SocketException e)
                     {
                         Toast.MakeText(this.Activity, "Geen verbinding kunnen maken, probeer het later nog een keer!", Android.Widget.ToastLength.Short).Show();
+                        Toast.MakeText(this.Activity, e.ErrorCode.ToString(), Android.Widget.ToastLength.Short).Show();
+                        Toast.MakeText(this.Activity, e.Message, Android.Widget.ToastLength.Short).Show();
                     }
 
+                    /*try
+                    {
+                        MailMessage mail = new MailMessage();
+                        System.Net.Mail.SmtpClient SmtpServer = new System.Net.Mail.SmtpClient("smtp.gmail.com");
+                        mail.From = new MailAddress("teamkoob@gmail.com");
+                        mail.To.Add("e.klomp@nisi.nl");
+                        mail.Subject = "Thank you for signing up for our newsletter!";
+                        mail.Body = "You'll soon receive the first edition of Koob News!";
+                        SmtpServer.Port = 465;
+                        SmtpServer.Credentials = new System.Net.NetworkCredential("teamkoob@gmail.com", "ResacaBoys");
+                        SmtpServer.EnableSsl = true;
+
+                        SmtpServer.Send(mail);
+                    }
+                    catch (System.Net.Mail.SmtpException e)
+                    {
+                        Toast.MakeText(this.Activity, e.Message, Android.Widget.ToastLength.Short).Show();
+                        
+                    }
+                    */
 
                 }
 
