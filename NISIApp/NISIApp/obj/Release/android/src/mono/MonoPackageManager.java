@@ -99,7 +99,6 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "NISIApp.dll" comes first in this list. */
 		"NISIApp.dll",
-		"BouncyCastle.dll",
 		"FormsViewGroup.dll",
 		"MailKit.dll",
 		"MimeKit.dll",

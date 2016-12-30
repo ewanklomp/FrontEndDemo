@@ -104,17 +104,13 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\System.Xml.Linq.d
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\FormsViewGroup.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Java.Interop.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Mono.Android.dll.mdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Mono.Data.Sqlite.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\mscorlib.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Core.dll.mdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Data.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Net.Http.dll.mdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Numerics.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Runtime.Serialization.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.ServiceModel.Internals.dll.mdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Transactions.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Xml.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
