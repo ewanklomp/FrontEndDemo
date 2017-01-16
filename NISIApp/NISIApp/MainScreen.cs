@@ -68,10 +68,10 @@ namespace NISIApp
             //Create Programm Frontpage
             mItems = new List<ProgrammaRij>();
             mItems.Add(new ProgrammaRij("Data", "Cursustitel", "Locatie"));
-            mItems.Add(new ProgrammaRij("12 jan - 09 mrt", "Software Business Development", "de Uithof"));
             mItems.Add(new ProgrammaRij("12 jan - 09 mrt", "Advanced Model Driven Engineering", "de Uithof"));
-            mItems.Add(new ProgrammaRij("12 jan - 09 mrt", MainActivity.CursusArray[0].Naam, "de Uithof"));
+            mItems.Add(new ProgrammaRij("22 feb - 12 apr", MainActivity.CursusArray[0].Naam, "de Uithof"));
             mItems.Add(new ProgrammaRij("07 mrt - 16 mei", "Software Product Management", "de Uithof"));
+            mItems.Add(new ProgrammaRij("09 mrt - 18 mei", "Software Business Development", "de Uithof"));
             mItems.Add(new ProgrammaRij("14 mrt - 11 apr", "Agile Product Ownership & Product Management", "de Uithof"));
             mItems.Add(new ProgrammaRij("19 apr - 07 jun", "Ontwikkelen van Agile organisaties in de praktijk", "de Uithof"));
 

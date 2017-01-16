@@ -116,5 +116,13 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xa
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.csprojResolveAssemblyReference.cache
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\res\layout\dialog_cddemo.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\Microsoft.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\Mono.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Mono.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Release\NISIApp.dll.mdb

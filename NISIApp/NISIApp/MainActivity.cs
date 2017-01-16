@@ -57,7 +57,7 @@ namespace NISIApp
 
         private void OpenMainScreen()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
             RunOnUiThread(() => {
                 Intent i = new Intent(this, typeof(MainScreen));
                 this.StartActivity(i);

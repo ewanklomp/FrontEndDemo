@@ -14,6 +14,10 @@ NISIApp.dialog_Feedback, NISIApp;md54579c706db6ac24e9f2285c70670161d.dialog_Feed
 NISIApp.dialog_Feedback, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.dialog_Feedback
 NISIApp.dialog_Feedback;md54579c706db6ac24e9f2285c70670161d.dialog_Feedback
 nisiapp.dialog_Feedback;md54579c706db6ac24e9f2285c70670161d.dialog_Feedback
+NISIApp.dialog_CDDemo, NISIApp;md54579c706db6ac24e9f2285c70670161d.dialog_CDDemo
+NISIApp.dialog_CDDemo, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.dialog_CDDemo
+NISIApp.dialog_CDDemo;md54579c706db6ac24e9f2285c70670161d.dialog_CDDemo
+nisiapp.dialog_CDDemo;md54579c706db6ac24e9f2285c70670161d.dialog_CDDemo
 NISIApp.dialog_InformationJan, NISIApp;md54579c706db6ac24e9f2285c70670161d.dialog_InformationJan
 NISIApp.dialog_InformationJan, NISIApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54579c706db6ac24e9f2285c70670161d.dialog_InformationJan
 NISIApp.dialog_InformationJan;md54579c706db6ac24e9f2285c70670161d.dialog_InformationJan
