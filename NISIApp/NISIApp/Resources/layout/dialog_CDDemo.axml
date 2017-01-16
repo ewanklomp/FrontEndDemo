@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:layout_width="200dp"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="Vul je naam in om gegroet te worden!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/WebuitlegInflate"
+            android:textColor="#111"
+            android:gravity="center"
+            android:layout_marginTop="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/txtWebNaam"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="☺   Naam"
+            android:paddingLeft="10dp"
+            android:textColor="#000" />
+        <Button
+            android:text="Klik hier!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/BtnWebRequest" />
+        <TextView
+            android:text="Er is al 100 keer op deze knop gedrukt sinds de laatste update."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/WebKnopCountTxt"
+            android:textColor="#111"
+            android:gravity="center"
+            android:layout_marginTop="25dp" />
+      <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/WebrelativeLayout">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/WebProgress"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:visibility="invisible"
+            android:layout_centerInParent="true" />
+      </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

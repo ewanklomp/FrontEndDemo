@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="NISIApp.NISIApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-permission android:name="android.permission.INTERNET" />
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
-  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="NISIApp" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="Contact" android:theme="@style/MyTheme" android:name="md54579c706db6ac24e9f2285c70670161d.ContactView" />

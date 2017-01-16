@@ -12,6 +12,8 @@ using Android.Widget;
 using Android.Support.V7.App;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V4.Widget;
+using System.Net;
+using System.IO;
 
 namespace NISIApp
 {
@@ -65,6 +67,8 @@ namespace NISIApp
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
 
             
+            
+
         }
 
         private void MFeedback_Click(object sender, EventArgs e)

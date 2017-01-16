@@ -23,7 +23,7 @@ namespace NISIApp
         MyActionBarDrawerToggle mDrawerToggle;
         DrawerLayout mDrawerLayout;
         ListView mLeftDrawer;
-
+        Button mDemobtn;
         private List<ProgrammaRij> mItems;
         private ListView mProgrammaView;
 
@@ -38,6 +38,9 @@ namespace NISIApp
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
             mProgrammaView = FindViewById<ListView>(Resource.Id.ProgrammaFront);
+            mDemobtn = FindViewById<Button>(Resource.Id.button1);
+
+            mDemobtn.Click += MDemobtn_Click;
 
             //set Top bar
             SetSupportActionBar(mToolbar);
@@ -76,6 +79,13 @@ namespace NISIApp
 
             mProgrammaView.Adapter = adapter;
             mProgrammaView.ItemClick += MProgrammaView_ItemClick;
+        }
+
+        private void MDemobtn_Click(object sender, EventArgs e)
+        {
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            dialog_CDDemo dialogInfo = new dialog_CDDemo();
+            dialogInfo.Show(transaction, "dialog fragment");
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

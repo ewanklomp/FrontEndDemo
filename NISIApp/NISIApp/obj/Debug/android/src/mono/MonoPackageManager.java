@@ -103,6 +103,7 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"MailKit.dll",
 		"MimeKit.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

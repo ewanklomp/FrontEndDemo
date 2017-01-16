@@ -123,5 +123,12 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\mdelv.
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\ontwikkellv.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\drawable\spmlv.png
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\listviewrownieuws.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\dialog_cddemo.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Mono.CSharp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb
