@@ -68,7 +68,7 @@ namespace NISIApp
         {
             try
             {
-                string weburl = "http://146.185.181.163:8080/greeting?name=" + naam;
+                string weburl = "http://82.196.14.159:8080/greeting?name=" + naam;
                 WebRequest request = WebRequest.Create(weburl);
                 WebResponse response = request.GetResponse();
                 Stream dataStream = response.GetResponseStream();
