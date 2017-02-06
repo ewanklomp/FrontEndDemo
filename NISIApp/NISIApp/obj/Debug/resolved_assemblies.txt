@@ -16,6 +16,10 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xama
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Ads.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Analytics.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.AppIndexing.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\mscorlib.dll
@@ -26,11 +30,9 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Syst
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Mono.Data.Sqlite.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.Transactions.dll
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Mono.CSharp.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\System.Numerics.dll
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Mono.Data.Tds.dll

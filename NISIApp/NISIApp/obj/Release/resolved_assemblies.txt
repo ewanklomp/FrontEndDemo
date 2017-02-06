@@ -15,6 +15,10 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xa
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.GooglePlayServices.Ads.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.GooglePlayServices.Analytics.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.GooglePlayServices.AppIndexing.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Java.Interop.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\Mono.Android.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Release\android\assets\mscorlib.dll

@@ -32,6 +32,7 @@ namespace NISIApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            GAService.GetGASInstance().Track_App_Page("Cursussen");
 
             //Basic initialization.
             SetContentView(Resource.Layout.Cursusview);
@@ -136,6 +137,7 @@ namespace NISIApp
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             mDrawerToggle.OnOptionsItemSelected(item);
+            GAService.GetGASInstance().Track_App_Event(GAEventCategory.MenuOpen, "Menu is geopend");
             return base.OnOptionsItemSelected(item);
         }
     }

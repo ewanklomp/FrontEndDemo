@@ -79,6 +79,8 @@ namespace NISIApp
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
+            GAService.GetGASInstance().Track_App_Page("Aanmeld Pagina");
+            GAService.GetGASInstance().Track_App_Event(GAEventCategory.AanmeldOpen, "Aanmeld pagina is open");
 
             var view = inflater.Inflate(Resource.Layout.dialog_Aanmeld, container, false);
             mTitel = view.FindViewById<TextView>(Resource.Id.txtTitel);
@@ -140,6 +142,7 @@ Naam: " + mTxtNaam.Text +
                         client.Disconnect(true);
 
                         Toast.MakeText(this.Activity, "Succes! We zullen zo snel mogelijk contact met u opnemen!", Android.Widget.ToastLength.Short).Show();
+                        GAService.GetGASInstance().Track_App_Event(GAEventCategory.AanmeldVerstuur, "Aanmelding is verstuurd");
                     }
 
                     catch (System.Net.Sockets.SocketException e)
@@ -201,6 +204,8 @@ Naam: " + mTxtNaam.Text +
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
+            GAService.GetGASInstance().Track_App_Page("Feedback");
+            GAService.GetGASInstance().Track_App_Event(GAEventCategory.FeedbackOpen, "Feedback pagina is open");
 
             var view = inflater.Inflate(Resource.Layout.dialog_Feedback, container, false);
 
@@ -252,6 +257,7 @@ Naam: " + mTxtNaam.Text +
                     client.Send(message);
                     client.Disconnect(true);
                     Toast.MakeText(this.Activity, "Succes! We zullen zo snel mogelijk contact met u opnemen!", Android.Widget.ToastLength.Short).Show();
+                    GAService.GetGASInstance().Track_App_Event(GAEventCategory.FeedbackVerstuur, "Feedback is verstuurd");
 
                 }
                 catch (System.Net.Sockets.SocketException e)
@@ -283,6 +289,8 @@ Naam: " + mTxtNaam.Text +
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
+            GAService.GetGASInstance().Track_App_Page("CD3.0 Demo");
+           
 
             var view = inflater.Inflate(Resource.Layout.dialog_CDDemo, container, false);
             mNaamWeb = view.FindViewById<EditText>(Resource.Id.txtWebNaam);
@@ -292,12 +300,47 @@ Naam: " + mTxtNaam.Text +
 
             mTxtCountWeb = view.FindViewById<TextView>(Resource.Id.WebKnopCountTxt);
 
-            if (MainActivity.CurrentID != "Geen connectie kunnen maken met de server. Probeer het later nog een keer")
+            mTxtCountWeb.Text = MainActivity.CurrentID;
+            if (MainActivity.CurrentID == "Server is op dit moment niet bereikbaar")
             {
-                mTxtCountWeb.Text = "Er is al " + MainActivity.CurrentID + " keer op deze knop gedrukt sinds de laatste update.";
-            }
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress("NISI App", "teamkoob@gmail.com"));
+                message.To.Add(new MailboxAddress("Ewan Klomp", "e.klomp@nisi.nl"));
+                message.Subject = "Server is Down";
 
-            else { mTxtCountWeb.Text = MainActivity.CurrentID; }
+                message.Body = new TextPart("plain")
+                {
+                    Text = @"Er is op " + DateTime.Now + "UTC geprobeerd een connectie te maken met de server, maar dit is niet gelukt. Check of hij nog werkt graag."
+
+                };
+
+                using (var client = new MailKit.Net.Smtp.SmtpClient())
+                {
+                    try
+                    {
+                        // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+
+                        client.Connect("smtp.gmail.com", 25, false);
+
+                        // Note: since we don't have an OAuth2 token, disable
+                        // the XOAUTH2 authentication mechanism.
+                        client.AuthenticationMechanisms.Remove("XOAUTH2");
+
+                        // Note: only needed if the SMTP server requires authentication
+                        client.Authenticate("teamkoob@gmail.com", "ResacaBoys");
+
+                        client.Send(message);
+                        client.Disconnect(true);
+                        GAService.GetGASInstance().Track_App_Event(GAEventCategory.FeedbackVerstuur, "Server issue mail is verstuurd");
+
+                    }
+                    catch (System.Net.Sockets.SocketException e)
+                    {
+                        
+                    }
+                }
+            }
 
             mButtonWeb = view.FindViewById<Button>(Resource.Id.BtnWebRequest);
             mButtonWeb.Click += MButtonWeb_Click;
@@ -310,13 +353,11 @@ Naam: " + mTxtNaam.Text +
             mProgressWeb.Visibility = ViewStates.Visible;                                
             MainActivity.VulWebInitialWebrequest(mNaamWeb.Text);
             Toast.MakeText(this.Activity, MainActivity.CurrentContent, Android.Widget.ToastLength.Short).Show();
+                   
                       
-            if (MainActivity.CurrentID != "Geen connectie kunnen maken met de server. Probeer het later nog een keer")
-            {
-                mTxtCountWeb.Text = "Er is al " + MainActivity.CurrentID + " keer op deze knop gedrukt sinds de laatste update.";
-            }
+            mTxtCountWeb.Text = MainActivity.CurrentID;
+            
 
-            else { mTxtCountWeb.Text = MainActivity.CurrentID; }
 
             mProgressWeb.Visibility = ViewStates.Invisible;
 

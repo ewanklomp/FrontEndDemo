@@ -34,6 +34,7 @@ namespace NISIApp
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+            GAService.GetGASInstance().Initialize(this);
 
             // Get our button from the layout resource,
             // and attach an event to it
@@ -44,7 +45,8 @@ namespace NISIApp
             VulTeamleden();
             VulAanmeldingen();
             VulNieuws();
-            VulWebInitialWebrequest("");
+            CurrentID = "Server is op dit moment niet bereikbaar";
+            
             
 
         }
@@ -75,7 +77,7 @@ namespace NISIApp
                 StreamReader reader = new StreamReader(dataStream);
                 string responseFromServer = reader.ReadToEnd();
                 var txtresponse = Newtonsoft.Json.Linq.JObject.Parse(responseFromServer);
-                CurrentID = (string)txtresponse["id"];
+                CurrentID = "Er is al " + (string)txtresponse["id"] + " keer op deze knop gedrukt sinds de laatste update.";
                 CurrentContent = (string)txtresponse["content"];
             }
             catch (WebException e)

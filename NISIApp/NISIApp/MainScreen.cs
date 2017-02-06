@@ -31,7 +31,7 @@ namespace NISIApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            GAService.GetGASInstance().Track_App_Page("Main Screen");
             //Basic initialization.
             SetContentView(Resource.Layout.MainScreen);
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
@@ -79,6 +79,7 @@ namespace NISIApp
 
             mProgrammaView.Adapter = adapter;
             mProgrammaView.ItemClick += MProgrammaView_ItemClick;
+            //MainActivity.VulWebInitialWebrequest("");
         }
 
         private void MDemobtn_Click(object sender, EventArgs e)
@@ -172,6 +173,7 @@ namespace NISIApp
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             mDrawerToggle.OnOptionsItemSelected(item);
+            GAService.GetGASInstance().Track_App_Event(GAEventCategory.MenuOpen, "Menu is geopend");
             return base.OnOptionsItemSelected(item);
         }
     }

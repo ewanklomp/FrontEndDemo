@@ -1,0 +1,9 @@
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\TestApp.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\TestApp.pdb
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\nunit.framework.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\Xamarin.UITest.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\nunit.framework.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\bin\Debug\Xamarin.UITest.xml
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\obj\Debug\TestApp.csprojResolveAssemblyReference.cache
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\obj\Debug\TestApp.dll
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\TestApp\obj\Debug\TestApp.pdb
