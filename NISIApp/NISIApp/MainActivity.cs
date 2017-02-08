@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using Android.Graphics;
 using System.Net;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace NISIApp
 {
@@ -25,6 +26,7 @@ namespace NISIApp
         public static int CursusInt;
         public static Bitmap JanFoto, SjaakFoto, SlingerFoto, GarmFoto, CdFoto, SpmFoto, BdmpFoto, FBFoto, MdeFoto, AgilePOFoto, OAgileFoto;
         public static Bitmap cdlv, spmlv, bdmplv, fblv, mdelv, agilepolv, oagilelv;
+        public static string serveripurl;
 
         public static string CurrentID, CurrentContent;
 
@@ -46,8 +48,15 @@ namespace NISIApp
             VulAanmeldingen();
             VulNieuws();
             CurrentID = "Server is op dit moment niet bereikbaar";
-            
-            
+
+            string weburl2 = "http://www.students.science.uu.nl/~5655498/ServerIP.html";
+            WebRequest request2 = WebRequest.Create(weburl2);
+            WebResponse response2 = request2.GetResponse();
+            Stream dataStream2 = response2.GetResponseStream();
+            StreamReader reader2 = new StreamReader(dataStream2);
+            string responseFromServer2 = reader2.ReadToEnd();
+            serveripurl = "http://" + responseFromServer2 + ":8080/greeting?name=";
+            VulWebInitialWebrequest("");
 
         }
 
@@ -63,26 +72,45 @@ namespace NISIApp
             RunOnUiThread(() => {
                 Intent i = new Intent(this, typeof(MainScreen));
                 this.StartActivity(i);
+                
             });
         }
 
         public static void VulWebInitialWebrequest(string naam)
         {
+            bool Completed = ExecuteWithTimeLimit(TimeSpan.FromMilliseconds(1000), () =>
+            {
+                try
+                {
+                    string weburl = serveripurl + naam;
+                    WebRequest request = WebRequest.Create(weburl);
+                    WebResponse response = request.GetResponse();
+                    Stream dataStream = response.GetResponseStream();
+                    StreamReader reader = new StreamReader(dataStream);
+                    string responseFromServer = reader.ReadToEnd();
+                    var txtresponse = Newtonsoft.Json.Linq.JObject.Parse(responseFromServer);
+                    CurrentID = "Er is al " + (string)txtresponse["id"] + " keer op deze knop gedrukt sinds de laatste update.";
+                    CurrentContent = (string)txtresponse["content"];
+                }
+                catch (WebException e)
+                {
+                    CurrentID = "Geen connectie kunnen maken met de server. Probeer het later nog een keer";
+                }
+            });
+            
+        }
+
+        public static bool ExecuteWithTimeLimit(TimeSpan timeSpan, Action codeBlock)
+        {
             try
             {
-                string weburl = "http://82.196.14.159:8080/greeting?name=" + naam;
-                WebRequest request = WebRequest.Create(weburl);
-                WebResponse response = request.GetResponse();
-                Stream dataStream = response.GetResponseStream();
-                StreamReader reader = new StreamReader(dataStream);
-                string responseFromServer = reader.ReadToEnd();
-                var txtresponse = Newtonsoft.Json.Linq.JObject.Parse(responseFromServer);
-                CurrentID = "Er is al " + (string)txtresponse["id"] + " keer op deze knop gedrukt sinds de laatste update.";
-                CurrentContent = (string)txtresponse["content"];
+                Task task = Task.Factory.StartNew(() => codeBlock());
+                task.Wait(timeSpan);
+                return task.IsCompleted;
             }
-            catch (WebException e)
+            catch (AggregateException ae)
             {
-                CurrentID = "Geen connectie kunnen maken met de server. Probeer het later nog een keer";
+                throw ae.InnerExceptions[0];
             }
         }
 

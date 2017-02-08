@@ -310,7 +310,7 @@ Naam: " + mTxtNaam.Text +
 
                 message.Body = new TextPart("plain")
                 {
-                    Text = @"Er is op " + DateTime.Now + "UTC geprobeerd een connectie te maken met de server, maar dit is niet gelukt. Check of hij nog werkt graag."
+                    Text = @"Er is op " + DateTime.Now + " UTC geprobeerd een connectie te maken met de server, maar dit is niet gelukt. Check of hij nog werkt graag."
 
                 };
 

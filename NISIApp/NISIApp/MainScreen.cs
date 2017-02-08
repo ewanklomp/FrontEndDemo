@@ -79,7 +79,7 @@ namespace NISIApp
 
             mProgrammaView.Adapter = adapter;
             mProgrammaView.ItemClick += MProgrammaView_ItemClick;
-            //MainActivity.VulWebInitialWebrequest("");
+
         }
 
         private void MDemobtn_Click(object sender, EventArgs e)
@@ -175,6 +175,7 @@ namespace NISIApp
             mDrawerToggle.OnOptionsItemSelected(item);
             GAService.GetGASInstance().Track_App_Event(GAEventCategory.MenuOpen, "Menu is geopend");
             return base.OnOptionsItemSelected(item);
+            
         }
     }
 }
