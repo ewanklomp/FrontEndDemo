@@ -23,7 +23,7 @@ namespace TestApp
                 .Android
                 // TODO: Update this path to point to your Android app and uncomment the
                 // code if the app is not included in the solution.
-                .ApkFile ("../../../NISIApp/bin/Debug/NISIApp.NISIApp-Signed.apk")
+                .ApkFile ("../../../NISIApp/bin/Debug/com.nisi.nisiapp-Signed.apk")
                 .StartApp();
         }
 

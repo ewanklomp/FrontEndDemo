@@ -99,6 +99,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "NISIApp.dll" comes first in this list. */
 		"NISIApp.dll",
+		"BouncyCastle.dll",
 		"FormsViewGroup.dll",
 		"MailKit.dll",
 		"MimeKit.dll",
@@ -119,8 +120,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Analytics.dll",
 		"Xamarin.GooglePlayServices.AppIndexing.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
-		"Java.Interop.dll",
-		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

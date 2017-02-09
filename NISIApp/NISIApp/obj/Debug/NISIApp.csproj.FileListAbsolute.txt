@@ -1,7 +1,5 @@
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.pdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.NISIApp.apk
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.NISIApp-Signed.apk
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\BouncyCastle.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\FormsViewGroup.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\MailKit.dll
@@ -38,7 +36,6 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Xamarin.Forms.Xaml.
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.dll
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.pdb
-C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\bin\NISIApp.NISIApp.apk
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\mainscreen.xml
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\listviewrow.xml
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\res\layout\nieuws.xml
@@ -132,5 +129,8 @@ C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xama
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.csprojResolveAssemblyReference.cache
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\com.nisi.nisiapp.apk
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\com.nisi.nisiapp-Signed.apk
+C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\android\bin\com.nisi.nisiapp.apk
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\obj\Debug\NISIApp.dll.mdb
 C:\Users\Ewan\Desktop\FrontEndDemo\NISIApp\NISIApp\bin\Debug\NISIApp.dll.mdb

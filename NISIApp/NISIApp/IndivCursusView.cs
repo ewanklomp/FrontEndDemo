@@ -12,7 +12,6 @@ using Android.Widget;
 using Android.Support.V7.App;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V4.Widget;
-using static Android.Views.View;
 
 namespace NISIApp
 {

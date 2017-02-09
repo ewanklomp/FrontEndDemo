@@ -120,8 +120,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Analytics.dll",
 		"Xamarin.GooglePlayServices.AppIndexing.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
-		"Java.Interop.dll",
-		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
